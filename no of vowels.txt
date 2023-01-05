@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<string.h>
+int vowels(char arr[]);
+int main() {
+    char arr[30];
+    printf("Enter word:\n");
+    scanf("%s",arr);
+    printf("vowels are %d\t",vowels(arr));
+    //vowels(arr);
+    return 0;
+}
+int vowels(char arr[])
+{
+    
+    int count=0;
+    for(int i=0;arr[i]!='\0';i++)
+    {
+        if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u')
+        {
+            count++;
+        }
+    }
+   return count;
+}
